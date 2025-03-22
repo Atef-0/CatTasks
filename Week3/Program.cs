@@ -14,8 +14,9 @@
     {
         if (dic.ContainsKey(name))
         {
-            Console.WriteLine();
-        }
+            Console.WriteLine($"Stdent Found!\nStudent name:{name} Student Grade: {dic[name]}");
+        }else
+            Console.WriteLine("student not found");
     }
     private static void Main(string[] args)
     {
@@ -31,7 +32,8 @@
         Console.WriteLine($"Values after swapping: i1: {i1}, i2: {i2}");
         Console.WriteLine("------------------------------------------------");
         Dictionary<string, int> dic = new Dictionary<string, int> { { "h", 12 }, { "d", 45 }, { "g", 87 },  { "k", 65 },{ "x", 88 }, };
-
+        FindStudent("h", dic);
+        FindStudent("aaaa", dic);
  
  
  
