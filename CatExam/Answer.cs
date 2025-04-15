@@ -10,5 +10,10 @@ namespace CatExam
     {
         public int AnswerId { get; set; }
         public string AnswerText { get; set; }
+        public Answer(string answerText, int answerId)
+        {
+            AnswerText = answerText;
+            AnswerId = answerId;
+        }
     }
 }
